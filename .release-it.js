@@ -1,3 +1,11 @@
+/*
+ * @Descripttion: 
+ * @version: 0.0.01
+ * @Author: Nxl3477
+ * @Date: 2021-09-26 11:12:09
+ * @LastEditors: Nxl3477
+ * @LastEditTime: 2021-09-26 11:12:10
+ */
 // @see https://github.com/release-it/release-it/blob/master/config/release-it.json
 module.exports = {
   "git": {

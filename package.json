@@ -1,22 +1,22 @@
 {
   "name": "babel-plugin-code-inject",
-  "version": "1.0.0",
+  "version": "1.3.0",
   "author": "nixiaolei",
-  "description": "babel代码插入工具",
-  "main": "lib/bundle.cjs.js",
-  "module": "lib/bundle.js",
-  "browser": "lib/bundle.js",
+  "description": "A Babel plugin that implements automatic injection of functions/code segments based on comments",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "browser": "src/index.js",
   "scripts": {
     "preview": "node ./preview/index.js"
   },
-  "keywords": [],
+  "keywords": ["babel", "plugin", "babel-plugin", "@babel"],
   "license": "ISC",
   "publishConfig": {
     "registry": "http://registry.npmjs.org"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/nxl3477/babel-plugin-code-inject"
   },
   "engines": {
     "node": ">= 10.0.0",
