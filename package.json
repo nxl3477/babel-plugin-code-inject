@@ -1,0 +1,44 @@
+{
+  "name": "babel-plugin-code-inject",
+  "version": "1.0.0",
+  "author": "nixiaolei",
+  "description": "babel代码插入工具",
+  "main": "lib/bundle.cjs.js",
+  "module": "lib/bundle.js",
+  "browser": "lib/bundle.js",
+  "scripts": {
+    "preview": "node ./preview/index.js"
+  },
+  "keywords": [],
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "http://registry.npmjs.org"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">= 10.0.0",
+    "npm": "^6.0.0"
+  },
+  "peerDependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/generator": "^7.15.0",
+    "@babel/helper-plugin-utils": "^7.14.5",
+    "@babel/parser": "^7.15.3",
+    "@babel/traverse": "^7.15.0",
+    "@babel/types": "^7.15.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $HUSKY_GIT_PARAMS"
+    }
+  }
+}
