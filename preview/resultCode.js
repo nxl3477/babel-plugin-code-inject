@@ -48,13 +48,18 @@ class Test {
 ;
 
 /* @inject:testCode */
-() => 2; // 匿名函数自执行
+() => {
+  alert('插入代码测试');
+  return 2;
+}; // 匿名函数自执行
 
 
 ;
 
 /* @inject:testTrack */
-() => {}; // 匿名函数自执行
+() => {
+  _testTrack2();
+}; // 匿名函数自执行
 
 
 ;

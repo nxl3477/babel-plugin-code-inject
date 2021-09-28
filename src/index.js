@@ -174,7 +174,14 @@ const babelPluginCodeInject = declare((api, options, dirname) => {
         const expression = path.get('expression')
         // 箭头函数
         if (expression.isArrowFunctionExpression()) {
-          injectCode(expression, path, state)
+          // 正常箭头函数字面亮在 ExpressionStatement 上
+          if( path.node.leadingComments ) {
+            injectCode(expression, path, state)
+          }
+          // iife 的 leadingComments 在箭头函数 node 上
+          if( expression.node.leadingComments ) {
+            injectCode(expression, expression, state)
+          }
         }
         // 普通函数
         if ( expression.isFunctionExpression() ) {

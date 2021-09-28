@@ -14,6 +14,7 @@ npm i babel-plugin-code-inject -D
 
 ## configuration
 
+示例：
 ```javascript
 module.exports = {
   plugins: [
